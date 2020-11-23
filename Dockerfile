@@ -2,13 +2,13 @@
 # and a workspace (GOPATH) configured at /go.
 FROM golang:1.15
 
-LABEL maintainer="Josh Ellithorpe <quest@mac.com>"
+LABEL maintainer="Fabien <fabcien@gmail.com>"
 
 # Copy the local package files to the container's workspace.
-ADD . /go/src/github.com/gcash/bchd
+ADD . /go/src/github.com/Fabcien/bchd
 
 # Switch to the correct working directory.
-WORKDIR /go/src/github.com/gcash/bchd
+WORKDIR /go/src/github.com/Fabcien/bchd
 
 # Build the code and the cli client.
 RUN go install .
